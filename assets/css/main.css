@@ -1132,6 +1132,162 @@ input[type="button"],
 	object-fit: cover;
 }
 
+/* Half Screen */
+@media screen and (max-width: 980px) {
+
+    #main {
+        padding: 2em 2em 3em 2em;
+    }
+
+    /* Home - intro */
+    .home-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-intro-img {
+        display: none;
+    }
+
+    #intro {
+        text-align: left;
+    }
+
+    #intro .section-title-intro,
+    #intro .section-text {
+        text-align: left;
+    }
+
+    #intro ul.section-text {
+        display: inline-block;
+        text-align: left;
+    }
+
+    /* Home - recent work stacks vertically */
+    #recent-work .row > .col-4 {
+        width: 50%;
+    }
+
+    /* Resume - reduce padding so image fills more width */
+    #resume-display {
+        padding: 0.5em .5em;
+    }
+
+    /* Projects - 2 columns */
+    #projects .row > .col-4 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    #main.project-main {
+        padding: 2em 2em;
+    }
+
+    #main.project-main .proj-section {
+        margin-bottom: 2em;
+    }
+
+    .proj-back-bar {
+        padding: 1.5em 0;
+    }
+
+    .proj-img-aero {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .proj-cols-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-cols-intro > div:last-child img {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    .proj-intro-flip > div:last-child {
+        order: -1;
+    }
+
+    .proj-intro-flip > div:last-child img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .proj-pdf {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .proj-photo-grid-kart {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .proj-photo-grid-kart .proj-grid-img,
+    .proj-photo-grid-kart video {
+        height: 200px;
+    }
+
+    .proj-cols-design {
+        grid-template-columns: 1fr;
+    }
+
+    .fabrication-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fab-item-tall {
+        grid-row: auto;
+    }
+
+    .proj-cols-challenges {
+        grid-template-columns: 1fr;
+    }
+
+    .trebuchet-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        align-items: start;
+    }
+
+    .trebuchet-bottom img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .trebuchet-bottom video {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+	.kart-bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1em;
+		align-items: start;
+    }
+
+    .kart-bottom img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .kart-bottom video {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+}
+
 @media screen and (max-width: 1800px) {
 
 	body, input, select, textarea {
