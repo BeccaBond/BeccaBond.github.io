@@ -1301,6 +1301,10 @@ input[type="button"],
         margin-top: 0.5em;
     }
 
+	.cad-3 {
+    margin-top: 1.5em;
+	}
+
 }
 
 @media screen and (max-width: 1800px) {
@@ -1444,5 +1448,17 @@ input[type="button"],
     .trebuchet-bottom video {
         grid-column: auto;
     }
+
+	.cad-1 {
+		margin-top: 1em;
+	}
+
+	.cad-2 {
+		margin-top: 1em;
+	}
+
+	.cad-3 {
+    margin-top: 0.75em;
+	}
 
 }
