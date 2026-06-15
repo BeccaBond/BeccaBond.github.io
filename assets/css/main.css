@@ -1071,6 +1071,14 @@ input[type="button"],
 	margin-top: -.75em;
 }
 
+.proj-img-topo {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-top: 0;
+}
+
 .proj-grid-caption {
 	font-size: 0.9em;
 	color: #1f1815;
@@ -1176,10 +1184,6 @@ input[type="button"],
     #projects .row > .col-4 {
         width: 50%;
     }
-
-}
-
-@media screen and (max-width: 980px) {
 
     #main.project-main {
         padding: 2em 2em;

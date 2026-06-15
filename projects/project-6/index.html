@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Sustainable Fishkeeping – Becca Bond</title>
+        <title>Interactive Topography – Becca Bond</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="/assets/css/main.css" />
@@ -21,54 +21,48 @@
         </nav>
 
         <header id="header" class="project-header">
-            <img src="/images/projects/fishkeeping/fish-banner-new.jpg" class="header-bg" alt="" />
-            <div class="header-overlay-proj"></div>
+            <img src="/images/projects/fourier/waves2.png" class="header-bg" alt="" />
+            <div class="header-overlay"></div>
             <div class="inner">
-                <h1>Sustainable Fishkeeping</h1>
+                <h1>Interactive Topography using Fourier Transform</h1>
             </div>
         </header>
 
-        <main id="main" class="project-main">
+    <main id="main" class="project-main">
 
-            <!-- Summary -->
-            <section class="proj-section" id="proj-intro">
-                <h2 class="proj-section-title">Summary</h2>
-                <p class="proj-text">Two of my classmates and I created this non-technical project to learn and practice more sustainable methods in keeping a fish. 
-                    We adopted a veiltail betta whom we named "Sonic" (I later named a terrestrial rover platform after Sonic) and researched important subjects in fishkeeping such as:</p>
-                <ul class="proj-text">
-                    <li>The three stages of mechanical filtration and how to make them more efficient</li>
-                    <li>Artificial filtration using aquatic plants and volcanic substrate</li>
-                    <li>The nitrogen cycle and minimizing toxic chemical compounds</li>
-                </ul>
-                    <p class="proj-text">While I initially created this project very whimsically, aiming simply to make a new aquatic friend, I surprised myself with the amount of fishkeeping knowledge I learned over the semester. Check out our learnings in our paper below! ↓</p>
-                    <p class="proj-text">Postscript: At the end of the semester, I traveled home across the country - and brought Sonic with me. He toured Boston, Dallas and Phoenix; made friends with the TSA agents; and became the highest fish in the world for a few hours. My next goal is to send a fish to space.</p>
-                </section>
-
-            <!-- Photo Grid -->
-            <section class="proj-section" id="proj-photos">
-                <div class="proj-photo-grid">
-                    <div>
-                        <img src="/images/projects/fishkeeping/fish-duck.jpg" class="proj-grid-img" alt="Fishkeeping photo 1" />
-                        <p class="proj-grid-caption">Sonic playing with his toys</p>
-                    </div>
-                    <div>
-                        <img src="/images/projects/fishkeeping/fish-dinner.png" class="proj-grid-img" alt="Fishkeeping photo 2" />
-                        <p class="proj-grid-caption">Training Sonic for a travel bag by bringing him to the dining hall</p>
-                    </div>
-                    <div>
-                        <img src="/images/projects/fishkeeping/fish-plane.jpg" class="proj-grid-img" alt="Fishkeeping photo 3" />
-                        <p class="proj-grid-caption">The highest-flying fish in the world</p>
-                    </div>
+        <!-- Summary + Images -->
+        <section class="proj-section" id="proj-intro">
+            <h2 class="proj-section-title">Summary</h2>
+            <div class="proj-cols-intro proj-intro-flip">
+                <div>
+                    <p class="proj-text">For our final multivariable calc project, my classmate and I created an <strong>interactive, real-time contour plot</strong>. 
+                        We used a Kinect sensor to input distance values over x and y grids, then used fourier transform to approximate the multivariable function which corresponded with those values. 
+                        Finally, we projected the function's contour plot in real time and enabled user control of the plot's settings.</p>
+                    <p class="proj-text">Users were able to place objects in front of the sensor and <strong>see the contours projected onto the objects in real time</strong>. 
+                        In the image below, a user places their hand in front of the sensor and visualizes the contour lines as well as gradient vectors.</p>
+                    <p class="proj-text">Users were also able to visualize fourier transform by <strong>increasing and decreasing the radius of frequencies included in the function's approximation</strong>. 
+                        When more frequencies were included, the contour plot became more accurate and more rough; when fewer frequencies were included, the contour plot became less accurate and more smooth. 
+                        In the images on the right, a user increases the radius of frequencies to more accurately approximate and plot the contour of a pair of scissors.</p>
+                    <img src="/images/projects/fourier/topo-hand.jpg" class="proj-img-topo" alt="" />
+                    <p class="proj-text">This project was a really cool way to learn, apply and teach fourier transform. 
+                        Check out our project paper below to learn more! ↓</p>
                 </div>
-            </section>
+                <div>
+                    <img src="/images/projects/fourier/topo1.jpeg" class="proj-img" alt="" />
+                    <img src="/images/projects/fourier/topo3.jpeg" class="proj-img" alt="" />
+                    <img src="/images/projects/fourier/topo6.jpeg" class="proj-img" alt="" />
+                    <img src="/images/projects/fourier/topo9.jpeg" class="proj-img" alt="" />
+                </div>
+            </div>
+        </section>
 
-            <!-- Paper -->
-            <section class="proj-section" id="proj-paper">
-                <h2 class="proj-section-title">Paper</h2>
-                <iframe src="/files/Sustainable Fishkeeping Documentation.pdf" class="proj-pdf"></iframe>
-            </section>
+        <!-- Paper -->
+        <section class="proj-section" id="proj-paper">
+            <h2 class="proj-section-title">Paper</h2>
+            <iframe src="/files/QEA2 Teach-In-3.pdf" class="proj-pdf"></iframe>
+        </section>
 
-        </main>
+    </main>
 
         <div class="proj-back-bar">
             <a href="/projects/" class="btn-download">All Projects</a>
@@ -77,7 +71,7 @@
         <footer id="footer">
             <nav class="footer-nav">
                 <a href="/projects/project-5/">← Previous Project</a>
-                <a href="/projects/project-1/">Next Project →</a>
+                <a href="/projects/project-7/">Next Project →</a>
             </nav>
         </footer>
 
