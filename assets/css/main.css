@@ -1301,8 +1301,18 @@ input[type="button"],
         margin-top: 0.5em;
     }
 
+	.cad-1 {
+		margin-top: 6em;
+		margin-left: 1em;
+	}
+
+	.cad-2 {
+		margin-left: 1.5em;
+	}
+
 	.cad-3 {
     margin-top: 1.5em;
+	margin-left: 1em;
 	}
 
 }
