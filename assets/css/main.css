@@ -1076,7 +1076,7 @@ input[type="button"],
 	width: 100%;
 	margin-bottom: 1em;
 	margin-left: 0;
-	margin-top: 0;
+	margin-top: -.75em;
 }
 
 .proj-grid-caption {
@@ -1138,6 +1138,10 @@ input[type="button"],
 	display: block;
 	height: 400px;
 	object-fit: cover;
+}
+
+.pdf-mobile-link {
+    display: none;
 }
 
 /* Half Screen */
@@ -1297,5 +1301,141 @@ input[type="button"],
 	body, input, select, textarea {
 		font-size: 12pt;
 	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #navbar {
+        padding: 1em 1.5em;
+    }
+
+    .nav-links {
+        gap: 1.5em;
+    }
+
+    .nav-links li:first-child {
+        display: none;
+    }
+
+    #header {
+        padding: 7em 2em 3em 2em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header > .inner {
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    #main {
+        padding: 1.5em 1.5em 2em 1.5em;
+    }
+
+    #main.project-main {
+        padding: 1.5em 1.5em;
+    }
+
+    #main > section {
+        margin: 0;
+    }
+
+    #recent-work .row > .col-4 {
+        width: 100%;
+    }
+
+    #projects .row > .col-4 {
+        width: 100%;
+    }
+
+    #contact .row {
+        margin-left: 0;
+    }
+
+    #contact .row > .col-6 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #contact-info {
+        padding-left: 0;
+        margin-top: 2em;
+    }
+
+    .proj-pdf {
+        display: none;
+    }
+
+    .pdf-mobile-link {
+        display: inline-block;
+    }
+
+    .proj-section {
+        margin-bottom: 2.5em;
+    }
+
+    .proj-cols-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-cols-intro > div:last-child img {
+        width: 100%;
+    }
+
+    .proj-text {
+        margin-right: 0;
+    }
+
+    .col-list {
+        margin-right: 0;
+        column-count: 1;
+    }
+
+    .cad-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fabrication-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fab-item-tall {
+        grid-row: auto;
+    }
+
+    #main.project-main video {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .proj-img {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+	.proj-img-topo {
+		margin-top: 0;
+		margin-bottom: 3em;
+	}
+
+    .proj-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-grid-img {
+        height: 250px;
+    }
+
+    .trebuchet-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .trebuchet-bottom video {
+        grid-column: auto;
+    }
 
 }
